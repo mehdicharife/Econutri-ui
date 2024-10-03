@@ -3,16 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: white;
+  --foreground: #003E1A;
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: white;
   }
-}
+} */
 
 body {
   color: var(--foreground);
@@ -20,8 +21,60 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+/* Universal Reset */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
+
+/* Specific Resets */
+html, body {
+  height: 100%; /* Ensure body takes full height */
+}
+
+ul, ol {
+  list-style: none; /* Remove bullet points and numbering from lists */
+  padding: 0; /* Remove padding from lists */
+  margin: 0; /* Remove margin from lists */
+}
+
+li {
+  margin: 0; /* Remove default margin from list items */
+  padding: 0; /* Remove default padding from list items */
+}
+
+/* Reset for anchor elements */
+a {
+  color: inherit; /* Remove default link color */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Reset for nav */
+nav {
+  display: block; /* Ensure nav behaves as a block element */
+}
+
+/* Ensure semantic elements are treated as block elements */
+header, footer, section, article, aside, nav {
+  display: block; /* Ensure semantic elements behave as block elements */
+}
+
+/* Ensure inputs and buttons have consistent styling */
+input, button {
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  border: none; /* Remove default border */
+  background: none; /* Remove background */
+  font-family: inherit; /* Inherit font settings */
+}
+
+
+/* Ensure focus outlines for accessibility */
+a:focus, button:focus, input:focus {
+  outline: 2px solid blue; /* Add custom outline for accessibility */
+}
+
+
