@@ -13,7 +13,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Éconutri",
-  description: "Collaborative argument encyclopedia",
+  description: "Une plateforme de commercialisation des produits alimentaires proches de leurs dates d'expiration",
 };
 
 
@@ -23,13 +23,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-
+  console.log(process.env);
+  
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={montserrat.className}>
         <Container>
           <Navbar/> 
           {children}
+          <div className='mt-16'></div>
         </Container>
         
       </body>

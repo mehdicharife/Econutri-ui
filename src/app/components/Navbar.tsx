@@ -4,8 +4,8 @@ import NavItem from './NavItem';
 
 
 const navbarItems = [
-    {label: 'Acceuil', link: '/home'},
-    {label: 'Produits', link: '/products'},
+    {label: 'Acceuil', link: '/'},
+    {label: 'Produits', link: '/offers'},
     {label: 'Commerçants', link: '/vendors'},
     {label: 'About us', link: '/about'}
 ];
