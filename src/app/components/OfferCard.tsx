@@ -11,6 +11,8 @@ export interface Offer {
     id: number,
     product: Product,
     unitPrice: number,
+    availableQuantity: number
+
 };
 
 
