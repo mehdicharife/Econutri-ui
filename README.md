@@ -35,4 +35,3 @@ npm run dev
 - React
 - TypeScript
 - Tailwind CSS
-
